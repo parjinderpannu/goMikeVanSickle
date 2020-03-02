@@ -17,6 +17,9 @@ func main() {
 
 	slice := arr[:]
 
+	arr[1] = 42
+	slice[2] = 27
+
 	fmt.Println(arr, slice)
 
 	// var arr [3]int // easier for compiler
