@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 const (
-	first  = 1
-	second = "str2"
+	first  = iota
+	second = iota
 )
 
 func main() {
