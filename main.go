@@ -3,6 +3,14 @@ package main
 import "fmt"
 
 func main() {
+	const pi = 3.1415 // declare & initialize at same line
+	fmt.Println(pi)
+
+	const c = 3
+	fmt.Println(c + 3)
+
+	// a bunch of code
+	fmt.Println(c + 1.2)
 
 	firstName := "Arthur"
 	fmt.Println(firstName)
@@ -31,8 +39,8 @@ func main() {
 	b := true
 	fmt.Println(b)
 
-	c := complex(3, 4)
-	fmt.Println(c)
+	// c := complex(3, 4)
+	// fmt.Println(c)
 
 	r, im := real(c), imag(c)
 	fmt.Println(r, im)
