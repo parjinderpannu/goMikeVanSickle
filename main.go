@@ -18,7 +18,11 @@ func main() {
 
 	slice = append(slice, 4, 42, 27)
 	fmt.Println(slice)
+	s2 := slice[1:]  // index 1 till last
+	s3 := slice[:2]  // index start till 1 not including 2
+	s4 := slice[1:2] // starting at index 1 and not including 2
 	// arr := [3]int{1, 2, 3}
+	fmt.Println(s2, s3, s4)
 
 	// slice := arr[:]
 
