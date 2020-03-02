@@ -10,7 +10,7 @@ func main() {
 	fmt.Println(c + 3)
 
 	// a bunch of code
-	fmt.Println(c + 1.2)
+	fmt.Println(float32(c) + 1.2)
 
 	firstName := "Arthur"
 	fmt.Println(firstName)
