@@ -13,14 +13,19 @@ import "fmt"
 // )
 
 func main() {
-	arr := [3]int{1, 2, 3}
+	slice := []int{1, 2, 3} //dynamic size array through slice
+	fmt.Println(slice)
 
-	slice := arr[:]
+	slice = append(slice, 4, 42, 27)
+	fmt.Println(slice)
+	// arr := [3]int{1, 2, 3}
 
-	arr[1] = 42
-	slice[2] = 27
+	// slice := arr[:]
 
-	fmt.Println(arr, slice)
+	// arr[1] = 42
+	// slice[2] = 27
+
+	// fmt.Println(arr, slice)
 
 	// var arr [3]int // easier for compiler
 	// arr[0] = 1
