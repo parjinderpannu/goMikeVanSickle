@@ -6,7 +6,7 @@ func main() {
 	const pi = 3.1415 // declare & initialize at same line
 	fmt.Println(pi)
 
-	const c = 3
+	const c int = 3
 	fmt.Println(c + 3)
 
 	// a bunch of code
