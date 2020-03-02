@@ -6,7 +6,7 @@ func main() {
 
 	var firstName *string = new(string)
 	*firstName = "Arthur"
-	fmt.Println(firstName)
+	fmt.Println(*firstName)
 
 	// fmt.Println("Hello, from a module, Gophers")
 	var i int // initialize variable
