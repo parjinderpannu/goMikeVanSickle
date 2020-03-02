@@ -3,12 +3,13 @@ package main
 import "fmt"
 
 const (
-	first = iota + 6
+	first = iota
 	second
+	third
 )
 
 func main() {
-	fmt.Println(first, second)
+	fmt.Println(first, second, third)
 	// const pi = 3.1415 // declare & initialize at same line
 	// fmt.Println(pi)
 
