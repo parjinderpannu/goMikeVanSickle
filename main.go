@@ -2,10 +2,13 @@ package main
 
 import "fmt"
 
-const pi = 3.1415
+const (
+	first  = 1
+	second = "str2"
+)
 
 func main() {
-	fmt.Println(pi)
+	fmt.Println(first, second)
 	// const pi = 3.1415 // declare & initialize at same line
 	// fmt.Println(pi)
 
