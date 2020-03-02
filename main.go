@@ -13,4 +13,13 @@ func main() {
 
 	firstName := "Arthur"
 	fmt.Println(firstName)
+
+	b := true
+	fmt.Println(b)
+
+	c := complex(3, 4)
+	fmt.Println(c)
+
+	r, im := real(c), imag(c)
+	fmt.Println(r, im)
 }
