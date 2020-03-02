@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
+
+	var firstName *string = new(string)
+	*firstName = "Arthur"
+	fmt.Println(firstName)
+
 	// fmt.Println("Hello, from a module, Gophers")
 	var i int // initialize variable
 	i = 42    // give value
@@ -11,8 +16,8 @@ func main() {
 	var f float32 = 3.14
 	fmt.Println(f)
 
-	firstName := "Arthur"
-	fmt.Println(firstName)
+	// firstName := "Arthur"
+	// fmt.Println(firstName)
 
 	b := true
 	fmt.Println(b)
@@ -22,4 +27,5 @@ func main() {
 
 	r, im := real(c), imag(c)
 	fmt.Println(r, im)
+
 }
