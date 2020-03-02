@@ -9,10 +9,11 @@ const (
 
 const (
 	third = iota
+	fourth
 )
 
 func main() {
-	fmt.Println(first, second, third)
+	fmt.Println(first, second, third, fourth)
 	// const pi = 3.1415 // declare & initialize at same line
 	// fmt.Println(pi)
 
