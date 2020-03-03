@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 )
 
@@ -15,5 +16,5 @@ func startWebServer(port int) error {
 	fmt.Println("Starting server ...")
 	// do imp stuff
 	fmt.Println("Server started on port", port)
-	return nil
+	return errors.New("Something went wrong")
 }
