@@ -6,11 +6,13 @@ import (
 
 func main() {
 	fmt.Println("Hello, playground")
-	startWebServer()
+	port := 3000
+	startWebServer(port, 2)
 }
 
-func startWebServer() {
+func startWebServer(port int, numberOfRetries int) {
 	fmt.Println("Starting server ...")
 	// do imp stuff
-	fmt.Println("Server started")
+	fmt.Println("Server started on port", port)
+	fmt.Println("Number of retries", numberOfRetries)
 }
