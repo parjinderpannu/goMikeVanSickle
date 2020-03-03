@@ -7,13 +7,13 @@ import (
 func main() {
 	fmt.Println("Hello, playground")
 	port := 3000
-	isStarted := startWebServer(port)
-	fmt.Println(isStarted)
+	err := startWebServer(port)
+	fmt.Println(err)
 }
 
-func startWebServer(port int) bool {
+func startWebServer(port int) error {
 	fmt.Println("Starting server ...")
 	// do imp stuff
 	fmt.Println("Server started on port", port)
-	return true
+	return nil
 }
