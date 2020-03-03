@@ -13,15 +13,35 @@ import "fmt"
 // )
 
 func main() {
-	m := map[string]int{"foo": 42}
-	fmt.Println(m)
-	fmt.Println(m["foo"])
+	type user struct {
+		ID        int
+		FirstName string
+		LastName  string
+	}
 
-	m["foo"] = 27
-	fmt.Println(m)
+	var u user
+	u.ID = 1
+	u.FirstName = "Arthur"
+	u.LastName = "Dent"
+	fmt.Println(u)
+	fmt.Println(u.LastName)
 
-	delete(m, "foo")
-	fmt.Println(m)
+	u2 := user{ID: 1,
+		FirstName: "Clark",
+		LastName:  "Kent",
+	}
+
+	fmt.Println(u2)
+
+	// m := map[string]int{"foo": 42}
+	// fmt.Println(m)
+	// fmt.Println(m["foo"])
+
+	// m["foo"] = 27
+	// fmt.Println(m)
+
+	// delete(m, "foo")
+	// fmt.Println(m)
 
 	// slice := []int{1, 2, 3} //dynamic size array through slice
 	// fmt.Println(slice)
